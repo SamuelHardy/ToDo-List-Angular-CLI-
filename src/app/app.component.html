@@ -1,0 +1,26 @@
+<div class="content">
+<app-nav></app-nav>
+
+
+  <div class="template">
+    <h1>ToDo List</h1>
+    <p class="lead">Add your next own project</p>
+
+    <div class="container">
+      <input [(ngModel)] = 'newItem' type="text" class="ToDoList form-control" id="formGroupExampleInput" placeholder="Project name">
+      <button (click)="pushItem()" type="submit" class="add btn btn-primary">Add</button>
+
+      <ul>
+        <li *ngFor="let i of items; let ind = index">
+          {{i}}
+          <i (click)="removeItem(ind)" class="fa fa-times" aria-hidden="true"></i>
+        </li>
+      </ul>
+
+      <app-card></app-card>
+    </div>
+  </div>
+
+<app-footer></app-footer>
+
+</div>

@@ -1,0 +1,9 @@
+input.form-control {
+  width: 70%;
+  display: inline-flex;
+  margin-left: 5%;
+}
+button.btn {
+  width: 20%;
+  background-color: darkslateblue;
+}

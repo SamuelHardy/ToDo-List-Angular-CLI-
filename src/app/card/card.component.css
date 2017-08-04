@@ -1,0 +1,28 @@
+.card {
+  width: 45%;
+  max-width: 250px;
+  height: 290px;
+  margin: 8% 5px;
+  display: inline-block;
+}
+img {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+p.proj {
+  position: absolute;
+  display: block;
+  top: 20%;
+  left: 20%;
+  font-size: 36px;
+}
+.card-block {
+  background-color: #cdd9;
+}
+ @media screen and (max-width: 620px) {
+   .card {
+     width: 90%;
+     display: block;
+   }
+ }
